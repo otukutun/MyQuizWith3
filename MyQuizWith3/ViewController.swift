@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        QuestionDataManager.sharedInstance.loadQuestion()
+        
+        guard let nextViewController = segue.destination as? QuestionViewController else {
+            return
+        }
+        
+        guard let questionData = QuestionDataManager.sharedInstance.nextQuestion() else {
+            return
+        }
+        
+        nextViewController.questionData = questionData
+    }
 
 }
 

@@ -33,6 +33,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jAC-OO-mH9" kind="presentation" id="eFz-4L-EJj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyQuiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgS-jC-pEK">
                                 <rect key="frame" x="115" y="189" width="143" height="81"/>
@@ -58,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="i15-NJ-2Nb">
             <objects>
-                <viewController id="jAC-OO-mH9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="jAC-OO-mH9" customClass="QuestionViewController" customModule="MyQuizWith3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xWh-Gh-vIy"/>
                         <viewControllerLayoutGuide type="bottom" id="0Pa-yT-1El"/>
@@ -155,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="997.60000000000002" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="rzu-na-Q87">
             <objects>
-                <viewController id="6l4-L3-nvv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="6l4-L3-nvv" customClass="ResultViewController" customModule="MyQuizWith3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DTZ-K8-izC"/>
                         <viewControllerLayoutGuide type="bottom" id="r49-Tb-3OW"/>

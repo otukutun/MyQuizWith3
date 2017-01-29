@@ -17,6 +17,7 @@
 		2C70C8421E3C809800A97CDA /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C70C8411E3C809800A97CDA /* QuestionDataManager.swift */; };
 		2C70C8441E3C8C8A00A97CDA /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C70C8431E3C8C8A00A97CDA /* QuestionViewController.swift */; };
 		2C70C8461E3C8CC000A97CDA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C70C8451E3C8CC000A97CDA /* ResultViewController.swift */; };
+		2C70C8491E3C900A00A97CDA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C70C8481E3C900A00A97CDA /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2C70C8411E3C809800A97CDA /* QuestionDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
 		2C70C8431E3C8C8A00A97CDA /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		2C70C8451E3C8CC000A97CDA /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		2C70C8481E3C900A00A97CDA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C70C8491E3C900A00A97CDA /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +53,7 @@
 			children = (
 				2C70C80A1E3C5F1B00A97CDA /* MyQuizWith3 */,
 				2C70C8091E3C5F1B00A97CDA /* Products */,
+				2C70C8471E3C900A00A97CDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +81,14 @@
 				2C70C8451E3C8CC000A97CDA /* ResultViewController.swift */,
 			);
 			path = MyQuizWith3;
+			sourceTree = "<group>";
+		};
+		2C70C8471E3C900A00A97CDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C70C8481E3C900A00A97CDA /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

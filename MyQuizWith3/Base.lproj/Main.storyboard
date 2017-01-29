@@ -102,6 +102,9 @@
                                         <state key="normal" title="恐竜の化石">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer1Button:" destination="jAC-OO-mH9" eventType="touchUpInside" id="KxH-kK-bbl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylF-k6-mm4">
                                         <rect key="frame" x="0.0" y="94.5" width="331" height="84"/>
@@ -110,6 +113,9 @@
                                         <state key="normal" title="スペースシャトル">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer2Button:" destination="jAC-OO-mH9" eventType="touchUpInside" id="4sk-Cm-GGq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX8-UU-ugb">
                                         <rect key="frame" x="0.0" y="188.5" width="331" height="84.5"/>
@@ -118,6 +124,9 @@
                                         <state key="normal" title="タイムマシン">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer3Button:" destination="jAC-OO-mH9" eventType="touchUpInside" id="jEk-VD-e5B"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDr-OB-bjU">
                                         <rect key="frame" x="0.0" y="283" width="331" height="84"/>
@@ -126,6 +135,9 @@
                                         <state key="normal" title="無人島">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer4Button:" destination="jAC-OO-mH9" eventType="touchUpInside" id="F8K-yK-eqW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -153,8 +165,19 @@
                             <constraint firstItem="KrQ-fl-t6L" firstAttribute="top" secondItem="z4q-p5-A0p" secondAttribute="bottom" constant="8" symbolic="YES" id="y9B-SF-lFL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="0qt-8r-KLh" id="M8t-aG-5Iy"/>
+                        <outlet property="answer2Button" destination="ylF-k6-mm4" id="YeW-ad-CS6"/>
+                        <outlet property="answer3Button" destination="kX8-UU-ugb" id="BYU-HG-QBn"/>
+                        <outlet property="answer4Button" destination="SDr-OB-bjU" id="SLW-GF-nbb"/>
+                        <outlet property="correctImageView" destination="hJh-lw-jSq" id="a1x-fg-0kl"/>
+                        <outlet property="incorrectImageView" destination="nSx-h7-Ub0" id="zEG-BY-G6m"/>
+                        <outlet property="questionNoLabel" destination="cR5-Yp-WO5" id="Ep1-XB-xaf"/>
+                        <outlet property="questionTextView" destination="z4q-p5-A0p" id="nM8-SR-J5Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVb-M6-QnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3BP-n4-gkc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="997.60000000000002" y="137.18140929535232"/>
         </scene>
@@ -199,6 +222,9 @@
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3BP-n4-gkc" kind="unwind" unwindAction="goToTitle:" id="qRJ-AR-e6S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -209,6 +235,9 @@
                             <constraint firstItem="oqo-mF-zZb" firstAttribute="top" secondItem="SZm-9y-es9" secondAttribute="bottom" constant="30" id="xGS-MR-kbH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="j6G-ge-FAz" id="Cp3-OF-hS3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8K-fC-wyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

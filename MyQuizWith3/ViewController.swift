@@ -34,5 +34,8 @@ class ViewController: UIViewController {
         nextViewController.questionData = questionData
     }
 
+    @IBAction func goToTitle(_ segue: UIStoryboardSegue) {
+        
+    }
 }
 

@@ -12,8 +12,20 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let questionCount = QuestionDataManager.sharedInstance.questionDataArray.count
+        
+        var correctCount: Int = 0
+        
+        for QuestionData in QuestionDataManager.sharedInstance.questionDataArray {
+            if QuestionData.isCorrect() {
+                correctCount += 1
+            }
+        }
 
-        // Do any additional setup after loading the view.
+        let correctPercent: Float = (Float(correctCount) / Float(questionCount)) * 100
+        
+        correctPercentLabel.text = String(format: "%.1f", correctPercent) + "%"
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +33,7 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var correctPercentLabel: UILabel!
 
     /*
     // MARK: - Navigation

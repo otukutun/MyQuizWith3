@@ -17,7 +17,7 @@ class QuestionData {
     
     var correctAnswerNumber: Int
     
-    var userChoiceAnswernumber: Int?
+    var userChoiceAnswerNnumber: Int?
     
     var questionNo: Int = 0
     
@@ -31,7 +31,7 @@ class QuestionData {
     }
     
     func isCorrect() -> Bool {
-        if correctAnswerNumber == userChoiceAnswernumber {
+        if correctAnswerNumber == userChoiceAnswerNnumber {
             return true
         }
         return false
